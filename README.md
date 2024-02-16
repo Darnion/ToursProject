@@ -18,91 +18,91 @@
     TourOrders <.. Tours
     TourOrders <.. Orders
     Tours <.. Countries
-    TypeTourTours <.. Tours
     TypeTourTours <.. TypeTours
+    TypeTourTours <.. Tours
     Orders <.. Users
-    Orders <.. ReceivingPoints
-    HotelComments <.. Users
-    HotelComments <.. Hotels
     Hotels <.. Countries
-    TourHotels <.. Hotels
     TourHotels <.. Tours
+    TourHotels <.. Hotels
+    HotelComments <.. Hotels
+    HotelComments <.. Users
+    Orders <.. ReceivingPoints
     Users .. Role
    
     class Users {
-        +string LastName
-        +string FirstName
-        +string Patronymic
-        +int Age
-        +Role Role
-        +string Login
-        +string Password
+        string LastName
+        string FirstName
+        string Patronymic
+        int Age
+        Role Role
+        string Login
+        string Password
     }
     class Countries {
-        +int Code
-        +string Name
+        int Code
+        string Name
     }
     class HotelComments {
-        +int Id
-        +int HotelId
-        +string Text
-        +int UserId
-        +DateTimeOffset Date
+        int Id
+        int HotelId
+        string Text
+        int UserId
+        DateTimeOffset Date
     }
     class Hotels {
-        +int Id
-        +string Title
-        +int CountOfStars
-        +int CountryCode
-        +string Description
+        int Id
+        string Title
+        int CountOfStars
+        int CountryCode
+        string Description
     }
     class TypeTours {
-        +int Id
-        +string Name
-        +string Description
+        int Id
+        string Name
+        string Description
     }
     class ReceivingPoints {
-        +int Id
-        +string Title
-        +string Address
+        int Id
+        string Title
+        string Address
     }
     class Orders {
-        +int Id
-        +int UserId
-        +decimal Price
-        +DateTimeOffset OrderDate
-        +int AllSale
-        +DateTimeOffset DateReceipt
-        +int ReceivingPointId
-        +int Code
+        int Id
+        int UserId
+        decimal Price
+        DateTimeOffset OrderDate
+        int AllSale
+        DateTimeOffset DateReceipt
+        int ReceivingPointId
+        int Code
     }
     class Tours {
-        +int Id
-        +int TicketCount
-        +int CountryCode
-        +string Title
-        +string Description
-        +byte[] ImagePreview
-        +decimal Price
-        +bool IsActual
+        int Id
+        int TicketCount
+        int CountryCode
+        string Title
+        string Description
+        byte[] ImagePreview
+        decimal Price
+        bool IsActual
     }
     class TourOrders {
-        +int Tour_Id
-        +int Order_Id        
+        int Tour_Id
+        int Order_Id        
     }
     class TourHotels {
-        +int Tour_Id
-        +int Hotel_Id        
+        int Tour_Id
+        int Hotel_Id        
     }
     class TypeTourTours {
-        +int TypeTour_Id
-        +int Tour_Id        
+        int TypeTour_Id
+        int Tour_Id        
     }
     class Role {
-        <<enumeration>>
-        Client(Клиент)
-        Manager(Менеджер)
-        Admin(Администратор)
-        Quest(Гость)
+        <<enum>>
+        Guest
+        Client
+        Manager
+        Administrator
     }
 ```
