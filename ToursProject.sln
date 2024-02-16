@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToursProject.Context", "ToursProject.Context\ToursProject.Context.csproj", "{CFDCAB54-D725-41CE-8DEB-1A37D109791B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToursProject.UI", "ToursProject.UI\ToursProject.UI.csproj", "{1678B0EB-F76C-4740-AF75-A7558EF4879A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFDCAB54-D725-41CE-8DEB-1A37D109791B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFDCAB54-D725-41CE-8DEB-1A37D109791B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFDCAB54-D725-41CE-8DEB-1A37D109791B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFDCAB54-D725-41CE-8DEB-1A37D109791B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1678B0EB-F76C-4740-AF75-A7558EF4879A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1678B0EB-F76C-4740-AF75-A7558EF4879A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1678B0EB-F76C-4740-AF75-A7558EF4879A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1678B0EB-F76C-4740-AF75-A7558EF4879A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F43CBCA-03F5-4393-92DB-EDD88AFCF71E}
+	EndGlobalSection
+EndGlobal
