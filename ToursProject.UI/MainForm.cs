@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using ToursProject.Context.Enums;
 using ToursProject.UI.ListForms;
 
 namespace ToursProject.UI
@@ -9,31 +10,23 @@ namespace ToursProject.UI
         public MainForm()
         {
             InitializeComponent();
-            label1.Text = $"{CurrentUser.User.LastName} {CurrentUser.User.FirstName} {CurrentUser.User.Patronymic}";
-            отелиToolStripMenuItem.Enabled = !CurrentUser.CompareRole(Context.Enums.Role.Manager);
-            заказыToolStripMenuItem.Enabled = !CurrentUser.CompareRole(Context.Enums.Role.Guest) &&
-                !CurrentUser.CompareRole(Context.Enums.Role.Client);
+            labelUserName.Text = $"{CurrentUser.User.LastName} {CurrentUser.User.FirstName} {CurrentUser.User.Patronymic}";
+            заказыToolStripMenuItem.Enabled = CurrentUser.User.Role > Role.Client;
         }
 
         private void турыToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var form = new ToursForm();
-
-            form.ShowDialog();
+            new ToursForm().ShowDialog();
         }
 
         private void отелиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var form = new HotelsForm();
-
-            form.ShowDialog();
+            new HotelsForm().ShowDialog();
         }
 
         private void заказыToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var form = new OrdersGrid();
-
-            form.ShowDialog();
+            new OrdersGrid().ShowDialog();
         }
     }
 }

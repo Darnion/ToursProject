@@ -44,77 +44,77 @@
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTitle.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTitle.Location = new System.Drawing.Point(253, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(58, 19);
+            this.labelTitle.Size = new System.Drawing.Size(100, 21);
             this.labelTitle.TabIndex = 1;
-            this.labelTitle.Text = "label1";
+            this.labelTitle.Text = "labelTitle";
             // 
             // labelDescription
             // 
-            this.labelDescription.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDescription.Font = new System.Drawing.Font("Cascadia Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelDescription.Location = new System.Drawing.Point(253, 34);
             this.labelDescription.Name = "labelDescription";
             this.labelDescription.Size = new System.Drawing.Size(243, 83);
             this.labelDescription.TabIndex = 2;
-            this.labelDescription.Text = "label2";
+            this.labelDescription.Text = "labelDescription";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
             this.label1.Location = new System.Drawing.Point(870, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 19);
+            this.label1.Size = new System.Drawing.Size(82, 21);
             this.label1.TabIndex = 3;
             this.label1.Text = "Актуален";
             // 
             // labelCountry
             // 
             this.labelCountry.AutoSize = true;
-            this.labelCountry.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCountry.Font = new System.Drawing.Font("Cascadia Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelCountry.Location = new System.Drawing.Point(871, 34);
             this.labelCountry.Name = "labelCountry";
-            this.labelCountry.Size = new System.Drawing.Size(47, 17);
+            this.labelCountry.Size = new System.Drawing.Size(104, 17);
             this.labelCountry.TabIndex = 4;
-            this.labelCountry.Text = "label2";
+            this.labelCountry.Text = "labelCountry";
             // 
             // labelTicketCount
             // 
             this.labelTicketCount.AutoSize = true;
-            this.labelTicketCount.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTicketCount.Font = new System.Drawing.Font("Cascadia Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTicketCount.Location = new System.Drawing.Point(871, 64);
             this.labelTicketCount.Name = "labelTicketCount";
-            this.labelTicketCount.Size = new System.Drawing.Size(47, 17);
+            this.labelTicketCount.Size = new System.Drawing.Size(136, 17);
             this.labelTicketCount.TabIndex = 5;
-            this.labelTicketCount.Text = "label2";
+            this.labelTicketCount.Text = "labelTicketCount";
             // 
             // labelPrice
             // 
             this.labelPrice.AutoSize = true;
-            this.labelPrice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPrice.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPrice.Location = new System.Drawing.Point(870, 98);
             this.labelPrice.Name = "labelPrice";
-            this.labelPrice.Size = new System.Drawing.Size(58, 19);
+            this.labelPrice.Size = new System.Drawing.Size(100, 21);
             this.labelPrice.TabIndex = 6;
-            this.labelPrice.Text = "label2";
+            this.labelPrice.Text = "labelPrice";
             // 
             // listBox1
             // 
-            this.listBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listBox1.Font = new System.Drawing.Font("Cascadia Mono", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 17;
+            this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(502, 0);
             this.listBox1.Name = "listBox1";
             this.listBox1.ScrollAlwaysVisible = true;
-            this.listBox1.Size = new System.Drawing.Size(363, 106);
+            this.listBox1.Size = new System.Drawing.Size(363, 100);
             this.listBox1.TabIndex = 7;
             // 
             // numericUpDownCount
             // 
-            this.numericUpDownCount.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numericUpDownCount.Font = new System.Drawing.Font("Cascadia Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.numericUpDownCount.Location = new System.Drawing.Point(1040, 44);
             this.numericUpDownCount.Maximum = new decimal(new int[] {
             20,

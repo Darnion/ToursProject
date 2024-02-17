@@ -19,7 +19,7 @@ namespace ToursProject.UI.UserControls
             Tour = tour;
             Count = count;
             labelTitle.Text = Tour.Title;
-            labelPrice.Text = $"Цена {Tour.Price}руб.";
+            labelPrice.Text = $"Цена {Tour.Price} руб.";
             labelCountry.Text = Tour.Country.ToString();
             labelDescription.Text = string.IsNullOrWhiteSpace(Tour.Description) ? 
                 "Описание отсутствует" : Tour.Description;
