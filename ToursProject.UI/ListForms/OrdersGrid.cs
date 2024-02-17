@@ -13,17 +13,17 @@ namespace ToursProject.UI.ListForms
         public OrdersGrid()
         {
             InitializeComponent();
-            dataGridView1.AutoGenerateColumns = false;
-            comboBox1.SelectedIndex = 0;
+            dataGridView.AutoGenerateColumns = false;
+            comboBoxDiscount.SelectedIndex = 0;
             using(var db = new ToursDbContext())
             {
-                dataGridView1.DataSource = db.Orders.Include(x => x.Tours).Include(x => x.User).ToList();
+                dataGridView.DataSource = db.Orders.Include(x => x.Tours).Include(x => x.User).ToList();
             }
         }
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (dataGridView1.Columns[e.ColumnIndex].Name == "ColumnOrder")
+            if (dataGridView.Columns[e.ColumnIndex].Name == "ColumnOrder")
             {
                 var tours = (List<Tour>)e.Value;
                 var sb = new StringBuilder();
@@ -56,7 +56,7 @@ namespace ToursProject.UI.ListForms
                 orders = orders.OrderBy(x => x.Price).ToList();
             }
 
-            switch (comboBox1.SelectedIndex)
+            switch (comboBoxDiscount.SelectedIndex)
             {
                 case 1:
                    orders =  orders.Where(x => x.AllSale <= 10).ToList();
@@ -71,10 +71,10 @@ namespace ToursProject.UI.ListForms
                     break;
             }
 
-            dataGridView1.DataSource = orders;
+            dataGridView.DataSource = orders;
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, System.EventArgs e)
+        private void comboBoxDiscount_SelectedIndexChanged(object sender, System.EventArgs e)
         {
             Filter(false);
         }
