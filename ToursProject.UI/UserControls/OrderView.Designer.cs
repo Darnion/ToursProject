@@ -122,7 +122,7 @@
             0,
             0});
             this.numericUpDownCount.Name = "numericUpDownCount";
-            this.numericUpDownCount.Size = new System.Drawing.Size(120, 23);
+            this.numericUpDownCount.Size = new System.Drawing.Size(45, 23);
             this.numericUpDownCount.TabIndex = 8;
             this.numericUpDownCount.ValueChanged += new System.EventHandler(this.numericUpDownCount_ValueChanged);
             // 
@@ -150,7 +150,7 @@
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.pictureBox1);
             this.Name = "OrderView";
-            this.Size = new System.Drawing.Size(1163, 120);
+            this.Size = new System.Drawing.Size(1089, 120);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

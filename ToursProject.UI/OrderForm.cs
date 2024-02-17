@@ -13,7 +13,7 @@ namespace ToursProject.UI
     {
         private Dictionary<Tour, int> Tours;
         private decimal sum = 0;
-        private decimal sale = 0;
+        //private decimal sale = 0;
 
         public OrderForm(Dictionary<Tour, int> tours)
         {

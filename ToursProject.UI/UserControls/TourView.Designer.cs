@@ -64,7 +64,7 @@
             this.tableLayoutPanel1.Controls.Add(this.labelActual, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelCount, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.buttonEdit, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 205);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 230);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -120,7 +120,7 @@
             // 
             this.labelPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelPrice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelPrice.Location = new System.Drawing.Point(3, 183);
+            this.labelPrice.Location = new System.Drawing.Point(3, 208);
             this.labelPrice.Name = "labelPrice";
             this.labelPrice.Size = new System.Drawing.Size(342, 19);
             this.labelPrice.TabIndex = 3;
@@ -137,7 +137,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxImage.ContextMenuStrip = this.contextMenuStrip1;
             this.pictureBoxImage.Image = global::ToursProject.UI.Properties.Resources.picture;
-            this.pictureBoxImage.Location = new System.Drawing.Point(47, 3);
+            this.pictureBoxImage.Location = new System.Drawing.Point(47, 28);
             this.pictureBoxImage.Name = "pictureBoxImage";
             this.pictureBoxImage.Size = new System.Drawing.Size(258, 177);
             this.pictureBoxImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -167,7 +167,7 @@
             this.Controls.Add(this.pictureBoxImage);
             this.Controls.Add(this.labelTitle);
             this.Name = "TourView";
-            this.Size = new System.Drawing.Size(354, 325);
+            this.Size = new System.Drawing.Size(354, 349);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImage)).EndInit();

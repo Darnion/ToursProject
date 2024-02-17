@@ -6,6 +6,7 @@ using ToursProject.Context.Models;
 using System.Collections.Generic;
 using ToursProject.UI.UserControls;
 using ToursProject.UI.EditForms;
+using ToursProject.Context.Enums;
 
 namespace ToursProject.UI.ListForms
 {
@@ -18,8 +19,7 @@ namespace ToursProject.UI.ListForms
             InitializeComponent();
             comboBoxType.DisplayMember = nameof(TypeTour.Name);
             comboBoxType.ValueMember = nameof(TypeTour.Id);
-            buttonAdd.Enabled = !CurrentUser.CompareRole(Context.Enums.Role.Guest) 
-                && !CurrentUser.CompareRole(Context.Enums.Role.Client);
+            buttonAdd.Enabled = CurrentUser.User.Role > Role.Client;
         }
 
         private void Form1_Load(object sender, System.EventArgs e)
@@ -49,7 +49,7 @@ namespace ToursProject.UI.ListForms
                     allToursSum += (int)(item.Price * item.TicketCount);
                 }
 
-                label3.Text = $"Общая сумма: {allToursSum}руб.";
+                labelTotal.Text = $"Общая сумма: {allToursSum}руб.";
             }
         }
 
@@ -64,9 +64,9 @@ namespace ToursProject.UI.ListForms
                 Tours.Add(tour, 1);
             }
           
-            if(!button1.Visible)
+            if(!buttonOrder.Visible)
             {
-                button1.Visible = true;
+                buttonOrder.Visible = true;
             }
         }
 
@@ -126,7 +126,7 @@ namespace ToursProject.UI.ListForms
                 }
             }
 
-            label3.Text = $"Общая сумма: {allToursSum}руб.";
+            labelTotal.Text = $"Общая сумма: {allToursSum}руб.";
         }
 
         private void buttonAdd_Click(object sender, System.EventArgs e)
@@ -147,7 +147,7 @@ namespace ToursProject.UI.ListForms
             var tourView = new TourView(form.Tour);
             tourView.Parent = flowLayoutPanel1;
             allToursSum += (int)(tourView.tour.Price * tourView.tour.TicketCount);
-            label3.Text = $"Общая сумма: {allToursSum}руб.";
+            labelTotal.Text = $"Общая сумма: {allToursSum}руб.";
         }
 
         private void button1_Click(object sender, System.EventArgs e)
@@ -156,7 +156,7 @@ namespace ToursProject.UI.ListForms
             if(form.ShowDialog() == DialogResult.OK)
             {
                 Tours.Clear();
-                button1.Visible = false;
+                buttonOrder.Visible = false;
             }
         }
     }
