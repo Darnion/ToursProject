@@ -10,7 +10,7 @@ namespace ToursProject.UI.ListForms
 {
     public partial class HotelsForm : Form
     {
-        private int pageSize = 7;
+        private int pageSize = 10;
         private int oldCountPage = -1;
         private readonly BindingSource bindingSource = new BindingSource();
 
@@ -18,9 +18,9 @@ namespace ToursProject.UI.ListForms
         {
             InitializeComponent();
             bindingSource.CurrentItemChanged += Bs_CurrentItemChanged;
-            dataGridView1.AutoGenerateColumns = false;
-            Print();      
-            buttonAdd.Enabled = buttonEdit.Enabled = buttonDeleted.Enabled = CurrentUser.CompareRole(Context.Enums.Role.Administrator);
+            dataGridView.AutoGenerateColumns = false;
+            Print();
+            buttonAdd.Enabled = buttonEdit.Enabled = buttonDelete.Enabled = CurrentUser.CompareRole(Context.Enums.Role.Administrator);
         }
 
 
@@ -48,10 +48,10 @@ namespace ToursProject.UI.ListForms
                         bindingSource.Position = current;
                     }
 
-                    bindingNavigator1.BindingSource = bindingSource;
+                    bindingNavigator.BindingSource = bindingSource;
                 }
 
-                dataGridView1.DataSource = db.Hotels.Include(x => x.Country)
+                dataGridView.DataSource = db.Hotels.Include(x => x.Country)
                     .OrderBy(x => x.Title)
                     .Skip(bindingSource.Position * pageSize)
                     .Take(pageSize)
@@ -68,7 +68,7 @@ namespace ToursProject.UI.ListForms
                        
         private void buttonDeleted_Click(object sender, System.EventArgs e)
         {
-            var hotel = (Hotel)dataGridView1.SelectedRows[0].DataBoundItem;
+            var hotel = (Hotel)dataGridView.SelectedRows[0].DataBoundItem;
 
             if (hotel == null)
             {
@@ -109,7 +109,7 @@ namespace ToursProject.UI.ListForms
 
         private void buttonEdit_Click(object sender, System.EventArgs e)
         {
-            var hotelId = (Hotel)dataGridView1.SelectedRows[0].DataBoundItem;
+            var hotelId = (Hotel)dataGridView.SelectedRows[0].DataBoundItem;
 
             if (hotelId == null)
             {

@@ -32,17 +32,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HotelsForm));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelAllCount = new System.Windows.Forms.ToolStripStatusLabel();
-            this.buttonDeleted = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -52,16 +52,16 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator)).BeginInit();
+            this.bindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Cascadia Mono", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -69,21 +69,21 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 31);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
+            this.dataGridView.Location = new System.Drawing.Point(12, 31);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Size = new System.Drawing.Size(848, 309);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView.Size = new System.Drawing.Size(848, 309);
+            this.dataGridView.TabIndex = 0;
             // 
             // Column1
             // 
@@ -134,16 +134,16 @@
             this.toolStripStatusLabelAllCount.Size = new System.Drawing.Size(105, 17);
             this.toolStripStatusLabelAllCount.Text = "Кол-во записей: 0";
             // 
-            // buttonDeleted
+            // buttonDelete
             // 
-            this.buttonDeleted.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDeleted.Location = new System.Drawing.Point(878, 31);
-            this.buttonDeleted.Name = "buttonDeleted";
-            this.buttonDeleted.Size = new System.Drawing.Size(126, 36);
-            this.buttonDeleted.TabIndex = 9;
-            this.buttonDeleted.Text = "Удалить";
-            this.buttonDeleted.UseVisualStyleBackColor = true;
-            this.buttonDeleted.Click += new System.EventHandler(this.buttonDeleted_Click);
+            this.buttonDelete.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDelete.Location = new System.Drawing.Point(878, 31);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(126, 36);
+            this.buttonDelete.TabIndex = 9;
+            this.buttonDelete.Text = "Удалить";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDeleted_Click);
             // 
             // buttonAdd
             // 
@@ -167,12 +167,12 @@
             this.buttonEdit.UseVisualStyleBackColor = true;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
-            // bindingNavigator1
+            // bindingNavigator
             // 
-            this.bindingNavigator1.AddNewItem = null;
-            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
-            this.bindingNavigator1.DeleteItem = null;
-            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigator.AddNewItem = null;
+            this.bindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.bindingNavigator.DeleteItem = null;
+            this.bindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -182,16 +182,16 @@
             this.bindingNavigatorMoveNextItem,
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2});
-            this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
-            this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1024, 25);
-            this.bindingNavigator1.TabIndex = 12;
-            this.bindingNavigator1.Text = "bindingNavigator1";
+            this.bindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.bindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.bindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.bindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.bindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.bindingNavigator.Name = "bindingNavigator";
+            this.bindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.bindingNavigator.Size = new System.Drawing.Size(1024, 25);
+            this.bindingNavigator.TabIndex = 12;
+            this.bindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorCountItem
             // 
@@ -266,23 +266,23 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 370);
-            this.Controls.Add(this.bindingNavigator1);
+            this.Controls.Add(this.bindingNavigator);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonAdd);
-            this.Controls.Add(this.buttonDeleted);
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "HotelsForm";
             this.Text = "Отели";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
-            this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator)).EndInit();
+            this.bindingNavigator.ResumeLayout(false);
+            this.bindingNavigator.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,13 +290,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelAllCount;
-        private System.Windows.Forms.Button buttonDeleted;
+        private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonEdit;
-        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private System.Windows.Forms.BindingNavigator bindingNavigator;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;

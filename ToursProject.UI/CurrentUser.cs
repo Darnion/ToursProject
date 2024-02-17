@@ -16,7 +16,7 @@ namespace ToursProject.UI
                     user = new User()
                     {
                         Id = -1,
-                        FirstName = "Неавторизованный гость",
+                        FirstName = "Гость",
                         LastName = string.Empty,
                         Patronymic = string.Empty,
                         Role = Role.Guest
