@@ -55,9 +55,9 @@
             this.labelUserName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelUserName.Location = new System.Drawing.Point(12, 9);
             this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(69, 23);
+            this.labelUserName.Size = new System.Drawing.Size(154, 23);
             this.labelUserName.TabIndex = 1;
-            this.labelUserName.Text = "label1";
+            this.labelUserName.Text = "labelUserName";
             // 
             // label5
             // 
@@ -104,9 +104,9 @@
             this.labelSum.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSum.Location = new System.Drawing.Point(960, 468);
             this.labelSum.Name = "labelSum";
-            this.labelSum.Size = new System.Drawing.Size(57, 21);
+            this.labelSum.Size = new System.Drawing.Size(81, 21);
             this.labelSum.TabIndex = 6;
-            this.labelSum.Text = "label1";
+            this.labelSum.Text = "labelSum";
             // 
             // labelSale
             // 

@@ -43,7 +43,7 @@
             this.тToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1083, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(355, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -83,17 +83,17 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(680, 34);
+            this.label1.Location = new System.Drawing.Point(87, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 22);
+            this.label1.Size = new System.Drawing.Size(147, 22);
             this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.label1.Text = "labelUserName";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 169);
+            this.ClientSize = new System.Drawing.Size(355, 108);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;

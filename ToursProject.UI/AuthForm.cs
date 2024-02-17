@@ -16,6 +16,7 @@ namespace ToursProject.UI
         {
             var form = new MainForm();
             form.Show();
+            form.FormClosed += (object s, FormClosedEventArgs ev) => { this.Show(); };
             this.Hide();
         }
 
@@ -23,7 +24,7 @@ namespace ToursProject.UI
         {
             using(var db = new ToursDbContext())
             {
-                var user = db.Users.FirstOrDefault(x => x.Login == textBoxLogin.Text && x.Password== textBoxPassword.Text);
+                var user = db.Users.FirstOrDefault(x => x.Login == textBoxLogin.Text && x.Password == textBoxPassword.Text);
 
                 if(user == null) 
                 {
@@ -35,6 +36,7 @@ namespace ToursProject.UI
                     CurrentUser.User = user;
                     var form = new MainForm();
                     form.Show();
+                    form.FormClosed += (object s, FormClosedEventArgs ev) => { this.Show(); };
                     this.Hide();
                 }
             }
