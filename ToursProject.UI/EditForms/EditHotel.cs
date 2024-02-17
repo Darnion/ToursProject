@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using ToursProject.Context;
 using ToursProject.Context.Models;
 
-namespace ToursProject.AddForm
+namespace ToursProject.UI.EditForms
 {
     public partial class EditHotel : Form
     {

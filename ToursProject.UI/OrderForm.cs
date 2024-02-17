@@ -5,8 +5,9 @@ using System.Data.Entity;
 using System.Windows.Forms;
 using ToursProject.Context;
 using ToursProject.Context.Models;
+using ToursProject.UI.UserControls;
 
-namespace ToursProject
+namespace ToursProject.UI
 {
     public partial class OrderForm : Form
     {
@@ -17,7 +18,7 @@ namespace ToursProject
         public OrderForm(Dictionary<Tour, int> tours)
         {
             InitializeComponent();
-            labelUserName.Text = $"{WorkToUser.User.LastName} {WorkToUser.User.FirstName} {WorkToUser.User.Patronymic}";
+            labelUserName.Text = $"{CurrentUser.User.LastName} {CurrentUser.User.FirstName} {CurrentUser.User.Patronymic}";
             Tours = tours;
 
             foreach (var item in Tours.Keys)
@@ -72,9 +73,9 @@ namespace ToursProject
                 DateReceipt = DateTimeOffset.Now.AddDays(3)
             };
 
-            if (!WorkToUser.CompareRole(Context.Enums.Role.Quest))
+            if (!CurrentUser.CompareRole(Context.Enums.Role.Guest))
             {
-                order.UserId = WorkToUser.User.Id;
+                order.UserId = CurrentUser.User.Id;
             }
            
             using(var db = new ToursDbContext())

@@ -2,11 +2,11 @@
 using System.Data.Entity;
 using System.Linq;
 using System.Windows.Forms;
-using ToursProject.AddForm;
+using ToursProject.UI.EditForms;
 using ToursProject.Context;
 using ToursProject.Context.Models;
 
-namespace ToursProject
+namespace ToursProject.UI.ListForms
 {
     public partial class HotelsForm : Form
     {
@@ -20,7 +20,7 @@ namespace ToursProject
             bindingSource.CurrentItemChanged += Bs_CurrentItemChanged;
             dataGridView1.AutoGenerateColumns = false;
             Print();      
-            buttonAdd.Enabled = buttonEdit.Enabled = buttonDeleted.Enabled = WorkToUser.CompareRole(Context.Enums.Role.Admin);
+            buttonAdd.Enabled = buttonEdit.Enabled = buttonDeleted.Enabled = CurrentUser.CompareRole(Context.Enums.Role.Administrator);
         }
 
 

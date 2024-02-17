@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Windows.Forms;
+using ToursProject.UI.ListForms;
 
-namespace ToursProject
+namespace ToursProject.UI
 {
     public partial class MainForm : Form
     {
         public MainForm()
         {
             InitializeComponent();
-            label1.Text = $"{WorkToUser.User.LastName} {WorkToUser.User.FirstName} {WorkToUser.User.Patronymic}";
-            отелиToolStripMenuItem.Enabled = !WorkToUser.CompareRole(Context.Enums.Role.Meneger);
-            заказыToolStripMenuItem.Enabled = !WorkToUser.CompareRole(Context.Enums.Role.Quest) &&
-                !WorkToUser.CompareRole(Context.Enums.Role.Client);
+            label1.Text = $"{CurrentUser.User.LastName} {CurrentUser.User.FirstName} {CurrentUser.User.Patronymic}";
+            отелиToolStripMenuItem.Enabled = !CurrentUser.CompareRole(Context.Enums.Role.Manager);
+            заказыToolStripMenuItem.Enabled = !CurrentUser.CompareRole(Context.Enums.Role.Guest) &&
+                !CurrentUser.CompareRole(Context.Enums.Role.Client);
         }
 
         private void турыToolStripMenuItem_Click(object sender, EventArgs e)

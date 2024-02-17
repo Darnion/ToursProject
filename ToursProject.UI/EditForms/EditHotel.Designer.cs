@@ -1,4 +1,4 @@
-﻿namespace ToursProject.AddForm
+﻿namespace ToursProject.UI.EditForms
 {
     partial class EditHotel
     {

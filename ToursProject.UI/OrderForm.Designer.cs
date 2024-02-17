@@ -1,4 +1,4 @@
-﻿namespace ToursProject
+﻿namespace ToursProject.UI
 {
     partial class OrderForm
     {

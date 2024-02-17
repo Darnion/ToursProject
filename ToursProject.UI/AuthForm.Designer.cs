@@ -1,6 +1,6 @@
-﻿namespace ToursProject
+﻿namespace ToursProject.UI
 {
-    partial class AutorizationForm
+    partial class AuthForm
     {
         /// <summary>
         /// Required designer variable.

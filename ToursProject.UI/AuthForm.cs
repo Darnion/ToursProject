@@ -3,11 +3,11 @@ using System.Linq;
 using System.Windows.Forms;
 using ToursProject.Context;
 
-namespace ToursProject
+namespace ToursProject.UI
 {
-    public partial class AutorizationForm : Form
+    public partial class AuthForm : Form
     {
-        public AutorizationForm()
+        public AuthForm()
         {
             InitializeComponent();
         }
@@ -32,7 +32,7 @@ namespace ToursProject
                 }
                 else
                 {
-                    WorkToUser.User = user;
+                    CurrentUser.User = user;
                     var form = new MainForm();
                     form.Show();
                     this.Hide();

@@ -4,8 +4,10 @@ using System.Data.Entity;
 using ToursProject.Context;
 using ToursProject.Context.Models;
 using System.Collections.Generic;
+using ToursProject.UI.UserControls;
+using ToursProject.UI.EditForms;
 
-namespace ToursProject
+namespace ToursProject.UI.ListForms
 {
     public partial class ToursForm : Form
     {
@@ -16,8 +18,8 @@ namespace ToursProject
             InitializeComponent();
             comboBoxType.DisplayMember = nameof(TypeTour.Name);
             comboBoxType.ValueMember = nameof(TypeTour.Id);
-            buttonAdd.Enabled = !WorkToUser.CompareRole(Context.Enums.Role.Quest) 
-                && !WorkToUser.CompareRole(Context.Enums.Role.Client);
+            buttonAdd.Enabled = !CurrentUser.CompareRole(Context.Enums.Role.Guest) 
+                && !CurrentUser.CompareRole(Context.Enums.Role.Client);
         }
 
         private void Form1_Load(object sender, System.EventArgs e)

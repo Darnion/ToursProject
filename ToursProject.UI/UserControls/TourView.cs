@@ -6,8 +6,9 @@ using System.Linq;
 using System.Windows.Forms;
 using ToursProject.Context;
 using ToursProject.Context.Models;
+using ToursProject.UI.EditForms;
 
-namespace ToursProject
+namespace ToursProject.UI.UserControls
 {
     public partial class TourView : UserControl
     {
@@ -33,8 +34,8 @@ namespace ToursProject
                 var image = Image.FromStream(new MemoryStream(tour.ImagePreview));
                 pictureBoxImage.Image = image;
             }
-            buttonEdit.Enabled = buttonReview.Enabled = !WorkToUser.CompareRole(Context.Enums.Role.Guest)
-                && !WorkToUser.CompareRole(Context.Enums.Role.Client);
+            buttonEdit.Enabled = buttonReview.Enabled = !CurrentUser.CompareRole(Context.Enums.Role.Guest)
+                && !CurrentUser.CompareRole(Context.Enums.Role.Client);
         }
 
         private void buttonReview_Click(object sender, EventArgs e)

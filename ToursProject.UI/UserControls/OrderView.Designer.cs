@@ -1,4 +1,4 @@
-﻿namespace ToursProject
+﻿namespace ToursProject.UI.UserControls
 {
     partial class OrderView
     {
@@ -128,7 +128,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ToursProject.Properties.Resources.picture;
+            this.pictureBox1.Image = global::ToursProject.UI.Properties.Resources.picture;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(215, 114);

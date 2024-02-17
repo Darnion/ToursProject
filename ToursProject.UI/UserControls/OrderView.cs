@@ -5,7 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 using ToursProject.Context.Models;
 
-namespace ToursProject
+namespace ToursProject.UI.UserControls
 {
     public partial class OrderView : UserControl
     {

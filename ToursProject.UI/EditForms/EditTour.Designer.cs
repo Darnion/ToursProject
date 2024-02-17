@@ -1,4 +1,4 @@
-﻿namespace ToursProject
+﻿namespace ToursProject.UI.EditForms
 {
     partial class EditTour
     {

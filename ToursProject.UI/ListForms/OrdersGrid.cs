@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using ToursProject.Context;
 using ToursProject.Context.Models;
 
-namespace ToursProject
+namespace ToursProject.UI.ListForms
 {
     public partial class OrdersGrid : Form
     {

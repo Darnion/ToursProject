@@ -1,9 +1,9 @@
 ﻿using ToursProject.Context.Enums;
 using ToursProject.Context.Models;
 
-namespace ToursProject
+namespace ToursProject.UI
 {
-    internal static class WorkToUser
+    internal static class CurrentUser
     {
         private static User user;
 

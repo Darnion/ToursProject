@@ -1,4 +1,4 @@
-﻿namespace ToursProject
+﻿namespace ToursProject.UI.UserControls
 {
     partial class TourView
     {
