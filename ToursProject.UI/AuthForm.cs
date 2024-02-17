@@ -26,8 +26,6 @@ namespace ToursProject.UI
             {
                 var user = db.Users.FirstOrDefault(x => x.Login == textBoxLogin.Text && x.Password == textBoxPassword.Text);
 
-                var users = db.Users.ToList();
-
                 if(user == null) 
                 {
                     MessageBox.Show("Неправильное имя пользователя или пароль!");
