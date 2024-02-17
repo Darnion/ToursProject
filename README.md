@@ -14,7 +14,7 @@
 Схема моделей
 ---
 ```mermaid
-    classDiagram
+classDiagram
     TourOrders <.. Tours
     TourOrders <.. Orders
     Tours <.. Countries
@@ -105,4 +105,22 @@
         Manager
         Administrator
     }
+```
+
+---
+Диаграмма последовательности для прецендента авторизация
+---
+```mermaid
+sequenceDiagram
+    actor U as Неавторизованный пользователь
+    participant AF as Форма авторизации
+    participant T as Обработка данных
+    participant DB as База данных
+    participant Act as Активность авторизации
+    U->>AF:ввод авторизационных данных
+    AF->>T:передача данных
+    T->>T:валидация
+    T->>DB:поиск пользователя
+    DB-->>T:результат поиска
+    T->>Act:сообщение об успешности
 ```
