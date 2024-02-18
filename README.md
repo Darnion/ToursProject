@@ -112,7 +112,7 @@ Administrator
 ---
 ```mermaid
 sequenceDiagram
-actor U as Неавторизованный пользователь
+actor U as User
 participant UI
 participant CB as Code Behind
 participant DB as Database
